@@ -1,0 +1,11 @@
+# VSCode
+.project
+.classpath
+.settings/
+.bloop/**
+project/.bloop/**
+!.bloop/bloop.settings.json
+.metals
+.bsp
+*.class
+target/
