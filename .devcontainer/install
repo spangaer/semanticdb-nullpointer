@@ -1,0 +1,9 @@
+#!/bin/bash
+
+mkdir -p ~/.local/share/coursier/bin
+cd ~/.local/share/coursier/bin
+
+curl -fLo coursier https://github.com/coursier/launchers/raw/master/coursier &&
+    chmod +x coursier && 
+   ./coursier setup -y &&
+   ./coursier install bloop
