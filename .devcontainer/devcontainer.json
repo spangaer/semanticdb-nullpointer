@@ -18,6 +18,7 @@
         "metals.javaHome": "/usr/local/sdkman/candidates/java/current"
       }
     }
-  },
-  "postCreateCommand": "/unmanaged/install"
+  }
+  // moved to dockerfile so avaiable when metals install starts
+  // "postCreateCommand": "/unmanaged/install"
 }
