@@ -29,8 +29,9 @@ class MyInterfaceImpl implements MyInterface {
     return null;
   }
 
+  @SuppressWarnings("unchecked")
   private <T> Function<InvocationHandler, T> getConstructor(Class<T> contract) {
-    @SuppressWarnings("unchecked")
+
     Constructor<T> constructor = (Constructor<T>) proxyConstructors.computeIfAbsent(contract, c -> {
       return null;
     });
