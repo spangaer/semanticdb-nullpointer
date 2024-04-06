@@ -30,7 +30,7 @@ class MyInterfaceImpl implements MyInterface {
   }
 
   private <T> Function<InvocationHandler, T> getConstructor(Class<T> contract) {
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings(value = "unchecked")
     Constructor<T> constructor = (Constructor<T>) proxyConstructors.computeIfAbsent(contract, c -> {
       return null;
     });
